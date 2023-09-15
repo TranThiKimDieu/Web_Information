@@ -1,0 +1,450 @@
+:root {
+  --greenl: #78b43d;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--greenl);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+
+}
+
+nav ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Hiển thị các mục trong danh sách theo hàng ngang */
+  align-items: center;
+  /* Canh giữa các mục trong header theo chiều dọc */
+}
+
+nav li {
+  margin-right: 25px;
+  /* Khoảng cách giữa các mục trong danh sách */
+}
+
+.menu-button {
+  background-color: var(--greenl);
+  width: 60px;
+  /* Chiều rộng của nút */
+  height: 60px;
+  /* Chiều cao của nút */
+  transition: background-color 0.3s ease;
+  text-align: center;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: -20px;
+
+}
+
+.text1 {
+
+  font-size: 10px;
+  margin-left: 5px;
+  color: white;
+  display: flex;
+}
+
+.menu-button:hover {
+  background-color: rgb(11, 105, 39);
+}
+
+#img1 {
+  position: relative;
+  bottom: 10px;
+  width: 100px;
+
+}
+
+.img2 {
+  bottom: auto;
+
+}
+
+#b1 {
+  background-color: var(--greenl);
+  color: white;
+}
+
+#b1:hover {
+  background-color: rgb(11, 105, 39);
+}
+
+#b4 {
+  background-color: var(--greenl);
+  color: white;
+  margin-left: 60px;
+}
+
+#b4:hover {
+  background-color: rgb(11, 105, 39);
+}
+
+.change-color-on-hover {
+  color: #000;
+  /* Màu chữ mặc định */
+  transition: color 0.3s;
+  /* Thời gian chuyển đổi màu */
+}
+
+.change-color-on-hover:hover {
+  color: hsl(104, 78%, 53%);
+  /* Màu chữ khi con trỏ chuột được đưa vào */
+}
+
+.divleft {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: 30%;
+
+}
+
+.texth3 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.texth3:hover {
+  color: var(--greenl);
+  /* Thay đổi màu chữ khi trỏ chuột vào */
+}
+
+.imgtin {
+  width: 100px;
+  height: 100px;
+}
+
+.divall {
+  margin-top: 80px;
+  display: flex;
+  width: 35cm;
+  justify-content: center;
+}
+
+.div3 {
+  display: flex;
+
+}
+
+.div21 {
+  margin-top: 5px;
+}
+
+.text4 {
+  margin-left: 5px;
+
+}
+
+.div4 {
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.text5 {
+  color: #000;
+  transition: color 0.3s;
+  list-style-type: square;
+
+
+}
+
+.text5::marker {
+  color: green;
+}
+
+.text5:hover {
+  color: var(--greenl);
+}
+
+.divhead {
+  display: flex;
+  justify-content: center
+    /*Mặc định, giá trị của display là block, và justify-content không áp dụng cho phần tử block.*/
+}
+
+.divright {
+
+  display: flex;
+
+  width: 6cm
+}
+
+#buttonimg {
+  width: 8cm;
+  height: 5cm;
+  background-image: url(img/ngoaihang.jpg);
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  width: 4cm;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 2cm;
+  background-color: var(--greenl);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiển thị menu khi người dùng trỏ chuột vào nút */
+.menu-container:hover .menu {
+  display: block;
+}
+
+.menubt {
+  width: 4cm;
+  height: 0.8cm;
+  border-bottom-color: white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: background-color 0.3s ease;
+  background: var(--greenl);
+}
+
+.menubt:hover {
+  background-color: rgb(11, 105, 39);
+}
+
+#divend {
+  width: 8cm;
+  margin-top: 1cm;
+  margin-left: 20px;
+}
+
+#dv1 {
+  width: 8cm;
+  border-bottom: color var(--greenl);
+}
+
+#line {
+  width: 8cm;
+  height: 2px;
+  background-color: var(--greenl);
+  margin-top: -15px;
+}
+
+.menu1 {
+  margin-top: 10px;
+}
+
+.m1 {
+  display: flex;
+  justify-content: s
+}
+
+#m1-1 {
+  margin-top: 3px;
+
+}
+
+/* Tùy chỉnh giao diện bảng */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+
+}
+
+#td1 {
+  font-weight: bold;
+  width: 50;
+}
+
+#td2 {
+  color: red;
+}
+
+#td3 {
+  color: green;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Động cơ hover cho các dòng */
+tr:hover {
+  background-color: #ddd;
+}
+
+
+.search {
+  position: absolute;
+  bottom: 5px;
+  left: 13.5cm;
+  display: none;
+
+
+}
+
+.searchfather:hover .search {
+  display: block;
+}
+
+.input1 {
+  width: 20cm;
+  height: 1.3cm;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.video-div1 {
+  width: 22.5cm;
+  height: 15cm;
+  margin-top: 20px;
+  margin-left: 2cm;
+
+
+}
+
+.video-div2 {
+
+  border-width: 2px;
+  border: 2px solid var(--greenl);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+.h4vd {
+  margin-top: -20px;
+  margin-left: 30px;
+}
+
+.video-div4 {
+  border: 2px solid  rgb(214, 214, 214);
+  width: 12.5cm;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cuon {
+  margin-left: 20px;
+  width: 350px;
+  /* Độ rộng của phần nội dung */
+  height: 400px;
+  /* Độ cao của phần nội dung */
+  overflow-y: scroll;
+  /* Cho phép cuộn theo chiều dọc khi cần */
+  
+}
+
+.video-div3 {
+  margin-top: 8px;
+  display: flex;
+}
+
+
+
+div.footer {
+  width: 100%;
+  height: 83px;
+  float: left;
+  background-color: #ebebeb;
+}
+
+div.footer .footer_link {
+  display: flex;
+  justify-content: center;
+}
+
+div.footer .footer_link ul {
+  list-style: none;
+  width: 106px;
+  font-size: 13px;
+  margin: 15px 10px 0 10px;
+}
+
+div.footer .footer_link ul li:first-child {
+  font-weight: bold;
+}
+
+div.nav_footer {
+  width: 100%;
+  height: 25px;
+  background-color: #78b43d;
+}
+
+div.nav_footer ul {
+  list-style: none;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+}
+
+div.nav_footer ul li {
+  color: #fff;
+  font-weight: bold;
+  margin: 5px 0 20px 20px;
+}
+
+div.address p {
+  font-size: 13px;
+  text-align: center;
+  color: #8a8da2;
+  margin: 25px 0 5px 5px;
+  line-height: 1.5;
+}
+
+div.footer img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+}
+.video1 {
+  display: flex;
+}
+
+.video2{
+  display: flex;
+  margin-top: 5px;
+}
+.a1{
+  text-decoration: none;
+color: #000;
+}
+.a1:hover{
+  color: var(--greenl);
+}
+.divlast{
+  width: 22.5cm;
+  height: 15cm;
+  margin-top: 20px;
+  margin-left: 2cm;
+}
+
+.divlast1{
+  display: flex;
+}
+.divlast2{
+  margin-top: 13px;
+}
+.divlast3{
+  margin-left: 5px;
+}
